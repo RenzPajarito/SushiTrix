@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Sushi Trix</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<section id="Home" class="secOne">
+		<img src="images/sushi.png" class="sushi">
+		<header id="header">
+			<a href="https://sushi-trix.netlify.app/" class="logo">Sushi Trix</a>
+			<div class="toggle"></div>
+			<ul class="nav">
+				<li><a href="#Home" style="--i:1;">Home</a></li>
+				<li><a href="#Sushi" style="--i:2;">Sushi</a></li>
+				<li><a href="orderpage.html" target="_blank" style="--i:3">Order Now</a>
+				<li><a href="#Contact" style="--i:4;">Contact</a></li>
+				<li><a href="#About" style="--i:5;">About</a></li>
+			</ul>
+		</header>
+
+		<div class="content">
+			<div class="textBox">
+				<h2>HI There!</h2>
+				<p>Rice to meet you It's been a long time no sea. Love and Sushi are a lot alike. You can never have too much of either. A balanced diet is a Sushi Roll in each hand. Make every day Sushi Day! Rock & rolls! Dream big, eat Sushi!</p>
+				<a href="#">Read More</a>
+			</div>
+		</div>
+
+		<div class="sci">
+			<li><a href="https://www.facebook.com/sushitrixmenu" target="_blank" style="--i:12;"><img src="images/facebook.png"></a></li>
+			<li><a href="#" target="_blank" style="--i:13;"><img src="images/twitter.png"></a></li>
+			<li><a href="#" target="_blank" style="--i:14;"><img src="images/instagram.png"></a></li>
+		</div>
+
+		<div class="scrollUp">
+			<a href="#"><img src="https://img.icons8.com/nolan/64/circled-up-2.png"/></a>
+		</div>
+	</section>
+
+	<main id="main">
+		<section id="Sushi" class="cards">
+			<div id="card" class="card">
+				<div class="card_image-container">
+					<img src="images/ss1.jpg">
+				</div>
+				<div class="card_content">
+					<p class="card_title text--medium">
+						Aburi Salmon Roll
+					</p>
+					<div class="card_info">
+						<p class="text--medium">8pcs</p>
+						<button onclick="ordernow()" class="card_price">270php</button>
+					</div>
+				</div>
+			</div>
+			<div id="card" class="card">
+				<div class="card_image-container">
+					<img src="images/ss2.jpg">
+				</div>
+				<div class="card_content">
+					<p class="card_title text--medium">
+						Aburi Salmon Sushi
+					</p>
+					<div class="card_info">
+						<p class="text--medium">8pcs</p>
+						<button onclick="ordernow()" class="card_price">250php</button>
+					</div>
+				</div>
+			</div>
+			<div id="card" class="card">
+				<div class="card_image-container">
+					<img src="images/ss3.jpg">
+				</div>
+				<div class="card_content">
+					<p class="card_title text--medium">
+						asstd. Cali Maki
+					</p>
+					<div class="card_info">
+						<p class="text--medium">80pcs</p>
+						<button onclick="ordernow()" class="card_price">1000php</button>
+					</div>
+				</div>
+			</div>
+			<div id="card" class="card">
+				<div class="card_image-container">
+					<img src="images/ss4.jpg">
+				</div>
+				<div class="card_content">
+					<p class="card_title text--medium">
+						Cali Maki
+					</p>
+					<div class="card_info">
+						<p class="text--medium">16pcs</p>
+						<button onclick="ordernow()" class="card_price">210php</button>
+					</div>
+				</div>
+			</div>
+			<div id="card" class="card">
+				<div class="card_image-container">
+					<img src="images/ss5.jpg">
+				</div>
+				<div class="card_content">
+					<p class="card_title text--medium">
+						Salmon Sushi
+					</p>
+					<div class="card_info">
+						<p class="text--medium">8pcs</p>
+						<button onclick="ordernow()" class="card_price">230php</button>
+					</div>
+				</div>
+			</div>
+			<div id="card" class="card">
+				<div class="card_image-container">
+					<img src="images/ss6.jpg">
+				</div>
+				<div class="card_content">
+					<p class="card_title text--medium">
+						Double Layer Baked Cali
+					</p>
+					<div class="card_info">
+						<p class="text--medium"></p>
+						<button onclick="ordernow()" class="card_price">390php</button>
+					</div>
+				</div>
+			</div>
+			<div id="card" class="card">
+				<div class="card_image-container">
+					<img src="images/ss7.jpg">
+				</div>
+				<div class="card_content">
+					<p class="card_title text--medium">
+						Double Layer Baked Cali
+					</p>
+					<div class="card_info">
+						<p class="text--medium">8-10pcs nori</p>
+						<button onclick="ordernow()" class="card_price">250php</button>
+					</div>
+				</div>
+			</div>
+			<div id="card" class="card">
+				<div class="card_image-container">
+					<img src="images/ss8.jpg">
+				</div>
+				<div class="card_content">
+					<p class="card_title text--medium">
+						Double Layer Cali Bake
+					</p>
+					<div class="card_info">
+						<p class="text--medium">2 packs of nori</p>
+						<button onclick="ordernow()" class="card_price">390php</button>
+					</div>
+				</div>
+			</div>
+			<div id="card" class="card">
+				<div class="card_image-container">
+					<img src="images/ss9.jpg">
+				</div>
+				<div class="card_content">
+					<p class="card_title text--medium">
+						Cali Maki
+					</p>
+					<div class="card_info">
+						<p class="text--medium">20pcs</p>
+						<button onclick="ordernow()" class="card_price">250php</button>
+					</div>
+				</div>
+			</div>
+			<div id="card" class="card">
+				<div class="card_image-container">
+					<img src="images/ss10.jpg">
+				</div>
+				<div class="card_content">
+					<p class="card_title text--medium">
+						Crazy Cali Rolls
+					</p>
+					<div class="card_info">
+						<p class="text--medium">16pcs</p>
+						<button onclick="ordernow()" class="card_price">250php</button>
+					</div>
+				</div>
+			</div>
+			<div id="card" class="card">
+				<div class="card_image-container">
+					<img src="images/ss11.jpg">
+				</div>
+				<div class="card_content">
+					<p class="card_title text--medium">
+						Salmon Roll
+					</p>
+					<div class="card_info">
+						<p class="text--medium">8pcs</p>
+						<button onclick="ordernow()" class="card_price">250php</button>
+					</div>
+				</div>
+			</div>
+			<div id="card" class="card">
+				<div class="card_image-container">
+					<img src="images/ss13.jpg">
+				</div>
+				<div class="card_content">
+					<p class="card_title text--medium">
+						Cali Rolls
+					</p>
+					<div class="card_info">
+						<p class="text--medium">16pcs</p>
+						<button onclick="ordernow()" class="card_price">215php</button>
+					</div>
+				</div>
+			</div>
+			<div id="card" class="card">
+				<div class="card_image-container">
+					<img src="images/ss14.jpg">
+				</div>
+				<div class="card_content">
+					<p class="card_title text--medium">
+						
+					</p>
+					<div class="card_info">
+						<p class="text--medium">28pcs</p>
+						<button onclick="ordernow()" class="card_price">550php</button>
+					</div>
+				</div>
+			</div>
+			<div id="card" class="card">
+				<div class="card_image-container">
+					<img src="images/ss15.jpg">
+				</div>
+				<div class="card_content">
+					<p class="card_title text--medium">
+						Cali Rolls
+					</p>
+					<div class="card_info">
+						<p class="text--medium">12pcs</p>
+						<button onclick="ordernow()" class="card_price">165php</button>
+					</div>
+				</div>
+			</div>
+			<div id="card" class="card">
+				<div class="card_image-container">
+					<img src="images/ss16.jpg">
+				</div>
+				<div class="card_content">
+					<p class="card_title text--medium">
+						asstd. Cali Maki Rolls
+					</p>
+					<div class="card_info">
+						<p class="text--medium">20pcs</p>
+						<button onclick="ordernow()" class="card_price">270php</button>
+					</div>
+				</div>
+			</div>
+			<div id="card" class="card">
+				<div class="card_image-container">
+					<img src="images/ss20.jpg">
+				</div>
+				<div class="card_content">
+					<p class="card_title text--medium">
+						Salmon Sashimi
+					</p>
+					<div class="card_info">
+						<p class="text--medium">7pcs</p>
+						<button onclick="ordernow()" class="card_price">210php</button>
+					</div>
+				</div>
+			</div>
+			<div id="card" class="card">
+				<div class="card_image-container">
+					<img src="images/ss21.jpg">
+				</div>
+				<div class="card_content">
+					<p class="card_title text--medium">
+						Ebi Tempura
+					</p>
+					<div class="card_info">
+						<p class="text--medium">6pcs</p>
+						<button onclick="ordernow()" class="card_price">230php</button>
+					</div>
+				</div>
+			</div>
+			<div id="card" class="card">
+				<div class="card_image-container">
+					<img src="images/ss22.jpg">
+				</div>
+				<div class="card_content">
+					<p class="card_title text--medium">
+						Salmon Sashimi
+					</p>
+					<div class="card_info">
+						<p class="text--medium">160grams</p>
+						<button onclick="ordernow()" class="card_price">300php</button>
+					</div>
+				</div>
+			</div>
+			<div id="card" class="card">
+				<div class="card_image-container">
+					<img src="images/ss23.jpg">
+				</div>
+				<div class="card_content">
+					<p class="card_title text--medium">
+						Kani Salad
+					</p>
+					<div class="card_info">
+						<p class="text--medium"></p>
+						<button onclick="ordernow()" class="card_price">210php</button>
+					</div>
+				</div>
+			</div>
+			<div id="card" class="card">
+				<div class="card_image-container">
+					<img src="images/ss24.jpg">
+				</div>
+				<div class="card_content">
+					<p class="card_title text--medium">
+						Salmon Bake Sushi
+					</p>
+					<div class="card_info">
+						<p class="text--medium">Large w/2 nori</p>
+						<button onclick="ordernow()" class="card_price">700php</button>
+					</div>
+				</div>
+			</div>
+			<div id="card" class="card">
+				<div class="card_image-container">
+					<img src="images/ss26.jpg">
+				</div>
+				<div class="card_content">
+					<p class="card_title text--medium">
+						Tuna Sushi
+					</p>
+					<div class="card_info">
+						<p class="text--medium">4pcs</p>
+						<button onclick="ordernow()" class="card_price">85php</button>
+					</div>
+				</div>
+			</div>
+			<div id="card" class="card">
+				<div class="card_image-container">
+					<img src="images/ss27.jpg">
+				</div>
+				<div class="card_content">
+					<p class="card_title text--medium">
+						Sushi Teishoku
+					</p>
+					<div class="card_info">
+						<p class="text--medium"></p>
+						<button onclick="ordernow()" class="card_price">280php</button>
+					</div>
+				</div>
+			</div>
+			<div id="card" class="card">
+				<div class="card_image-container">
+					<img src="images/ss28.jpg">
+				</div>
+				<div class="card_content">
+					<p class="card_title text--medium">
+						asstd. Cali Maki
+					</p>
+					<div class="card_info">
+						<p class="text--medium">40pcs</p>
+						<button onclick="ordernow()" class="card_price">530php</button>
+					</div>
+				</div>
+			</div>
+			<div id="card" class="card">
+				<div class="card_image-container">
+					<img src="images/ss29.jpg">
+				</div>
+				<div class="card_content">
+					<p class="card_title text--medium">
+						asstd. Cali Maki II
+					</p>
+					<div class="card_info">
+						<p class="text--medium">40pcs</p>
+						<button onclick="ordernow()" class="card_price">530php</button>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<section id="Contact" class="contact">
+		<div class="content">
+			<h2>Contact Us</h2>
+		</div>
+		<div class="container">
+			<div class="contactInfo">
+				<div class="box">
+					<div class="icon">
+						<img src="images/faw_map_marker.png">
+					</div>
+					<div class="text">
+						<h3>Address</h3>
+						<p>Block 211 Lot 14,<br>Cadena De Amor St.<br>Pembo Makati City</p>
+					</div>
+				</div>
+				<div class="box">
+					<div class="icon">
+						<img src="images/faw_phone.png">
+					</div>
+					<div class="text">
+						<h3>Contact Number</h3>
+						<p>Globe - 0995 237 9534<br>TNT - 0950 943 0268</p>
+					</div>
+				</div>
+				<div class="box">
+					<div class="icon">
+						<img src="images/cmd_email.png">
+					</div>
+					<div class="text">
+						<h3>Email</h3>
+						<p>joebillypajarito@gmail.com</p>
+					</div>
+				</div>
+			</div>
+		<div class="contactForm">
+			<form action="javascript:sendmail()" method="POST">
+				<h2>Send Message</h2>
+				<div class="inputBox">
+					<input type="text" id="Name" name="Name" required="required">
+					<span>Full Name</span>
+				</div>
+				<div class="inputBox">
+					<input type="email" id="Sender" name="Sender" required="required">
+					<span>Email</span>
+				</div>
+				<div class="inputBox">
+					<textarea type="text" id="Message" placeholder="Type your message..."></textarea>
+				</div>
+				<div class="inputBox">
+					<input type="submit" name="" value="Send">
+				</div>
+			</form>
+		</div>
+	</div>
+	</section>
+
+	<section class="footer" id="About">
+	   	<footer>
+	        <div class="footer-content">
+	            <h3>about</h3>
+	            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	            consequat.</p>
+	            <ul class="socials">
+	                <li><a href="https://www.facebook.com/sushitrixmenu"><img src="images/faw_facebook.png"></a></li>
+	                <li><a href="#"><img src="images/instagram.png" class="ig"></a></li>
+	                <li><a href="#"><img src="images/cmd_email.png"></i></a></li>
+	            </ul>
+	        </div>
+	        <div class="footer-bottom">
+	            <p>copyright &copy;2021 sushitrix. designed by <span>ZERN-TF708</span></p>
+	        </div>
+    	</footer>
+	</section>
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+	<script src="javascript.js"></script>
+	<script>
+		function sendmail(){
+       
+            var name = $('#Name').val();
+            var email = $('#Sender').val();
+        	var message = $('#Message').val();
+     
+            // var body = $('#body').val();
+     
+            var Body='Name: '+name+'<br>Email: '+email+'<br>Message: '+message;
+            //console.log(name, email, message);
+     
+            Email.send({
+        SecureToken:"fbf31702-bb7f-4a4e-9c1c-4ccf17ee777f",
+                To: 'zernsmith@gmail.com',
+                From: "SushiTrix@gmail.com",
+                Subject: "New message on contact from "+name,
+                Body: Body
+            }).then(
+                message =>{
+                    //console.log (message);
+                    if(message=='OK'){
+                        alert ("Your Massege Send Successfully");
+                    }
+                    else{
+                        console.error (message);
+                        alert('There is error at sending message.');
+                       }
+     
+                   }
+               );
+           }
+	</script>
+</body>
+</html>

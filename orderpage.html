@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="order.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <!-- <header>
+    <a href="index.html"><img src="images/arrow.png"><span>Sushi Trix</span></a>
+  </header> -->
+  <div class="container">
+    <div class="title">Sushi Order Form</div>
+    <div class="content">
+      <form action="javascript:sendmail()" method="POST">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" id="Name" name="Name" placeholder="Enter your name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Address</span>
+            <input type="text" id="Address" name="Address" placeholder="Enter your Address" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" id="Sender" name="Sender" placeholder="Enter your email" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="number" id="Phone" name="Phone" placeholder="Enter your number" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Select Product</span>
+            <select name="Select" id="Select" required="required">
+              <option value="Aburi Salmon Roll - [8pcs 270php]">Aburi Salmon Roll - [8pcs 270php]</option>
+              <option value="Aburi Salmon Sushi - [8pcs 250php]">Aburi Salmon Sushi - [8pcs 250php]</option>
+              <option value="asstd. Cali Maki - [80pcs 1000php]">asstd. Cali Maki - [80pcs 1000php]</option>
+              <option value="Cali Maki - [16pcs 210php]">Cali Maki - [16pcs 210php]</option>
+              <option value="Salmon Sushi - [8pcs 230php]">Salmon Sushi - [8pcs 230php]</option>
+              <option value="Dbl. Layer Baked Cali - [390php]">Dbl. Layer Baked Cali - [390php]</option>
+              <option value="Dbl. Layer Baked Cali - [8-10pcs/nori 250php]">Dbl. Layer Baked Cali - [8-10pcs/nori 250php]</option>
+              <option value="Dbl. Layer Baked Cali - [2pcs of nori 390php]">Dbl. Layer Baked Cali - [2pcs of nori 390php]</option>
+              <option value="Cali Maki - [20pcs 250php]">Cali Maki - [20pcs 250php]</option>
+              <option value="Crazy Cali Rolls - [16pcs 250php]">Crazy Cali Rolls - [16pcs 250php]</option>
+              <option value="Salmon Roll - [8pcs 250php]">Salmon Roll - [8pcs 250php]</option>
+              <option value="Cali Rolls - [16pcs 215php]">Cali Rolls - [16pcs 215php]</option>
+              <option value="Dikoalam - [28pcs 550php]">Dikoalam - [28pcs 550php]</option>
+              <option value="Cali Rolls - [12pcs 165php]">Cali Rolls - [12pcs 165php]</option>
+              <option value="asstd. Cali Maki Rolls - [20pcs 270php]">asstd. Cali Maki Rolls - [20pcs 270php]</option>
+              <option value="Salmon Sashimi - [7pcs 210php]">Salmon Sashimi - [7pcs 210php]</option>
+              <option value="Ebi Tempura - [6pcs 230php]">Ebi Tempura - [6pcs 230php]</option>
+              <option value="Salmon Sashimi - [160grams 300php]">Salmon Sashimi - [160grams 300php]</option>
+              <option value="Kani Salad - [210php]">Kani Salad - [210php]</option>
+              <option value="Salmon Bake Sushi - [Large w/2 nori 700php]">Salmon Bake Sushi - [Large w/2 nori 700php]</option>
+              <option value="Tuna Sushi - [4pcs 85php]">Tuna Sushi - [4pcs 85php]</option>
+              <option value="Sushi Teishoku - [280php]">Sushi Teishoku - [280php]</option>
+              <option value="asstd. Cali Maki - [40pcs 530php]">asstd. Cali Maki - [40pcs 530php]</option>
+              <option value="asstd. Cali Maki II - [40pcs 530php]">asstd. Cali Maki II - [40pcs 530php]</option>
+            </select>
+          </div>
+          <div class="input-box">
+            <span class="details">Quantity</span>
+            <input type="number" id="Quantity" name="Quantity" placeholder="Quantity" max="10" required>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Order Now">
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    function sendmail(){
+       
+            var name = $('#Name').val();
+            var address = $('#Address').val();
+            var email = $('#Sender').val();
+            var phone = $('#Phone').val();
+            var select = $('#Select').val();
+            var quantity = $('#Quantity').val();
+     
+            // var body = $('#body').val();
+     
+            var Body='Name: '+name+'<br>Address: '+address+'<br>Email: '+email+'<br>Phone: '+phone+'<br>Select: '+select+'<br>Quantity: '+quantity;
+            //console.log(name, email, message);
+     
+            Email.send({
+        SecureToken:"fbf31702-bb7f-4a4e-9c1c-4ccf17ee777f",
+                To: 'zernsmith@gmail.com',
+                From: "SushiTrix@gmail.com",
+                Subject: "New message on contact from "+name,
+                Body: Body
+            }).then(
+                message =>{
+                    //console.log (message);
+                    if(message=='OK'){
+                        alert ("Your Massege Send Successfully");
+                    }
+                    else{
+                        console.error (message);
+                        alert('There is error at sending message.');
+                       }
+     
+                   }
+               );
+           }
+  </script>
+</body>
+</html>
